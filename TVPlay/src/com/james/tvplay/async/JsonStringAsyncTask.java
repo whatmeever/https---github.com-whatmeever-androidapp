@@ -7,21 +7,32 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.james.tvplay.R;
 import com.james.tvplay.bean.DataInfo;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 
 public class JsonStringAsyncTask extends AsyncTask<String, Void, List<DataInfo>> {
 	
 	private Context context = null;
+	private ProgressDialog mpdDialog = null;
 
 	public JsonStringAsyncTask(Context context) {
+		this.context = context;
 	}
 	
 	@Override
 	protected void onPreExecute() {
-		// TODO Auto-generated method stub
+		mpdDialog = new ProgressDialog(context);
+		
+		mpdDialog.setTitle("请稍候");
+		mpdDialog.setIcon(R.drawable.ic_launcher);
+		mpdDialog.setMessage("玩命加载中……");
+		
+		mpdDialog.show();
+		
 		super.onPreExecute();
 	}
 
@@ -70,4 +81,9 @@ public class JsonStringAsyncTask extends AsyncTask<String, Void, List<DataInfo>>
 		return list;
 	}
 
+	@Override
+	protected void onPostExecute(List<DataInfo> result) {
+		// TODO Auto-generated method stub
+		super.onPostExecute(result);
+	}
 }

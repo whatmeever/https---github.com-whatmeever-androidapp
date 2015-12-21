@@ -5,6 +5,8 @@ import java.util.List;
 
 import com.james.tvplay.R;
 import com.james.tvplay.async.JsonStringAsyncTask;
+import com.james.tvplay.bean.DataInfo;
+import com.james.tvplay.interf.OnGetData;
 import com.james.tvplay.utils.HttpUtil;
 import com.james.tvplay.utils.NewsConstants;
 
@@ -14,19 +16,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
 /**
  * 
  * @author james
  *
  */
-public class MyFragment extends ListFragment {
+public class MyFragment extends ListFragment implements OnGetData{
+	
+	private List<DataInfo> list = null;
+
+	public MyFragment(List<DataInfo> list) {
+		this.list = list;
+	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		
 		View view = inflater.inflate(R.layout.fragment_one_layout, container, false);
+		
+		Toast.makeText(getActivity(), list.size() + "", Toast.LENGTH_LONG).show();
 		
 		List<String> list=new ArrayList<String>();
 		
@@ -49,5 +60,10 @@ public class MyFragment extends ListFragment {
 		}
 		
 		return view;
+	}
+
+	@Override
+	public void getData(List<DataInfo> list) {
+		Toast.makeText(getActivity(), "" + list.size(), 1).show();
 	}
 }

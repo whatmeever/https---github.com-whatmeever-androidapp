@@ -1,0 +1,15 @@
+package com.james.tvplay.interf;
+
+import java.util.List;
+
+import com.james.tvplay.bean.DataInfo;
+
+/**
+ * 
+ * @author james
+ *
+ */
+public interface OnGetData {
+
+	public void getData(List<DataInfo> list);
+}

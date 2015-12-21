@@ -4,7 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.james.tvplay.R;
+import com.james.tvplay.adapter.MyAdapter;
+import com.james.tvplay.async.JsonStringAsyncTask;
+import com.james.tvplay.async.URL2StringAsyncTask;
+import com.james.tvplay.bean.DataInfo;
 import com.james.tvplay.fragment.MyFragment;
+import com.james.tvplay.interf.OnGetData;
+import com.james.tvplay.interf.OnGetURLString;
+import com.james.tvplay.utils.HttpUtil;
+import com.james.tvplay.utils.NewsConstants;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -20,13 +28,16 @@ import android.view.MenuItem;
  * @author james
  *
  */
-public class WorkActivity extends FragmentActivity {
+public class WorkActivity extends FragmentActivity implements OnGetData, OnGetURLString{
 
 	private ViewPager mVp;
 	private PagerTabStrip mStrip;
 //	private List<View> mList;
 //	private String[] titles;
 	private List<Fragment> fragmentList;
+	
+	private List<DataInfo> list = null;
+	private String urlJsonStr = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +57,17 @@ public class WorkActivity extends FragmentActivity {
 		mStrip.setTabIndicatorColor(Color.GREEN);
 		// 设置导航标签的背景图.
 //		mStrip.setBackgroundResource(R.drawable.ic_launcher);
+		
+		String url = NewsConstants.URL_NEWS;
+		
+		try {
+			new URL2StringAsyncTask(this).execute(url);
+			
+			new JsonStringAsyncTask(this).execute(urlJsonStr);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		//	初始化数据
 		initData();
@@ -71,14 +93,24 @@ public class WorkActivity extends FragmentActivity {
 //		mList.add(view5);
 		
 		fragmentList = new ArrayList<Fragment>();
-		fragmentList.add(new MyFragment());
-		fragmentList.add(new MyFragment());
-		fragmentList.add(new MyFragment());
-		fragmentList.add(new MyFragment());
-		fragmentList.add(new MyFragment());
+		fragmentList.add(new MyFragment(list));
+		fragmentList.add(new MyFragment(list));
+		fragmentList.add(new MyFragment(list));
+		fragmentList.add(new MyFragment(list));
+		fragmentList.add(new MyFragment(list));
 		
 		MyAdapter adapter=new MyAdapter(getSupportFragmentManager(), fragmentList);
 		mVp.setAdapter(adapter);
+	}
+
+	@Override
+	public void getData(List<DataInfo> list) {
+		this.list = list;
+	}
+
+	@Override
+	public void getUrlString(String urlString) {
+		this.urlJsonStr = urlString;
 	}
 
 //	class MyAdapter extends PagerAdapter {
