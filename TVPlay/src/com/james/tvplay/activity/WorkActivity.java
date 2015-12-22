@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.james.tvplay.R;
-import com.james.tvplay.adapter.MyAdapter;
+import com.james.tvplay.adapter.DataInfoAdatper;
+import com.james.tvplay.adapter.FragementAdapter;
 import com.james.tvplay.async.JsonStringAsyncTask;
 import com.james.tvplay.async.URL2StringAsyncTask;
 import com.james.tvplay.bean.DataInfo;
@@ -22,13 +23,14 @@ import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 /**
  * 
  * @author james
  *
  */
-public class WorkActivity extends FragmentActivity implements OnGetData, OnGetURLString{
+public class WorkActivity extends FragmentActivity implements OnGetData{
 
 	private ViewPager mVp;
 	private PagerTabStrip mStrip;
@@ -38,6 +40,8 @@ public class WorkActivity extends FragmentActivity implements OnGetData, OnGetUR
 	
 	private List<DataInfo> list = null;
 	private String urlJsonStr = null;
+	
+	DataInfoAdatper adapter = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -61,9 +65,11 @@ public class WorkActivity extends FragmentActivity implements OnGetData, OnGetUR
 		String url = NewsConstants.URL_NEWS;
 		
 		try {
-			new URL2StringAsyncTask(this).execute(url);
+//			new URL2StringAsyncTask(this).execute(url);
+//			
+//			Thread.sleep(3000);
 			
-			new JsonStringAsyncTask(this).execute(urlJsonStr);
+			new JsonStringAsyncTask(this).execute(url);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -92,25 +98,22 @@ public class WorkActivity extends FragmentActivity implements OnGetData, OnGetUR
 //		mList.add(view4);
 //		mList.add(view5);
 		
-		fragmentList = new ArrayList<Fragment>();
-		fragmentList.add(new MyFragment(list));
-		fragmentList.add(new MyFragment(list));
-		fragmentList.add(new MyFragment(list));
-		fragmentList.add(new MyFragment(list));
-		fragmentList.add(new MyFragment(list));
-		
-		MyAdapter adapter=new MyAdapter(getSupportFragmentManager(), fragmentList);
-		mVp.setAdapter(adapter);
 	}
 
 	@Override
 	public void getData(List<DataInfo> list) {
 		this.list = list;
-	}
-
-	@Override
-	public void getUrlString(String urlString) {
-		this.urlJsonStr = urlString;
+		
+		adapter = new DataInfoAdatper(this, list);
+		
+		fragmentList = new ArrayList<Fragment>();
+		fragmentList.add(new MyFragment(list, adapter));
+		fragmentList.add(new MyFragment(list, adapter));
+		fragmentList.add(new MyFragment(list, adapter));
+		fragmentList.add(new MyFragment(list, adapter));
+		fragmentList.add(new MyFragment(list, adapter));
+		FragementAdapter adapter=new FragementAdapter(getSupportFragmentManager(), fragmentList);
+		mVp.setAdapter(adapter);
 	}
 
 //	class MyAdapter extends PagerAdapter {

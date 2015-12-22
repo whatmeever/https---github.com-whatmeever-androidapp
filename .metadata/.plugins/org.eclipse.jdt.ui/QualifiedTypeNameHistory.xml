@@ -3,11 +3,23 @@
 <fullyQualifiedTypeName name="android.support.v4.app.FragmentActivity"/>
 <fullyQualifiedTypeName name="android.support.v4.app.FragmentPagerAdapter"/>
 <fullyQualifiedTypeName name="android.support.v4.app.FragmentManager"/>
-<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
-<fullyQualifiedTypeName name="android.support.v4.app.ListFragment"/>
 <fullyQualifiedTypeName name="android.app.ProgressDialog"/>
-<fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="android.R.drawable"/>
-<fullyQualifiedTypeName name="com.james.tvplay.R"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="com.james.tvplay.interf.OnGetData"/>
+<fullyQualifiedTypeName name="com.james.tvplay.utils.HttpUtil"/>
+<fullyQualifiedTypeName name="com.james.tvplay.async.URL2StringAsyncTask"/>
+<fullyQualifiedTypeName name="com.james.tvplay.interf.OnGetURLString"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.james.tvplay.bean.DataInfo"/>
+<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
+<fullyQualifiedTypeName name="com.james.tvplay.adapter.DataInfoAdatper.ViewHolder"/>
+<fullyQualifiedTypeName name="android.view.LayoutInflater"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="com.james.tvplay.R"/>
+<fullyQualifiedTypeName name="com.james.tvplay.R.id"/>
+<fullyQualifiedTypeName name="com.james.tvplay.R.layout"/>
+<fullyQualifiedTypeName name="com.james.tvplay.adapter.DataInfoAdatper"/>
+<fullyQualifiedTypeName name="android.support.v4.app.ListFragment"/>
 </qualifiedTypeNameHistroy>

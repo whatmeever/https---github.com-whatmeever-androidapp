@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.james.tvplay.adapter.MyAdapter&apos; to &apos;FragementAdapter&apos;&#x0A;- Original project: &apos;TVPlay&apos;&#x0A;- Original element: &apos;com.james.tvplay.adapter.MyAdapter&apos;&#x0A;- Renamed element: &apos;com.james.tvplay.adapter.FragementAdapter&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MyAdapter&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.james.tvplay.adapter{MyAdapter.java[MyAdapter" matchStrategy="1" name="FragementAdapter" qualified="false" references="true" similarDeclarations="false" stamp="1450771212255" textual="false" version="1.0"/>
+</session>

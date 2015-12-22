@@ -9,6 +9,8 @@ import org.json.JSONObject;
 
 import com.james.tvplay.R;
 import com.james.tvplay.bean.DataInfo;
+import com.james.tvplay.interf.OnGetData;
+import com.james.tvplay.utils.HttpUtil;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -18,9 +20,11 @@ public class JsonStringAsyncTask extends AsyncTask<String, Void, List<DataInfo>>
 	
 	private Context context = null;
 	private ProgressDialog mpdDialog = null;
+	private OnGetData listener = null;
 
 	public JsonStringAsyncTask(Context context) {
 		this.context = context;
+		listener = (OnGetData) context;
 	}
 	
 	@Override
@@ -41,40 +45,53 @@ public class JsonStringAsyncTask extends AsyncTask<String, Void, List<DataInfo>>
 		List<DataInfo> list = new ArrayList<DataInfo>();
 		
 		JSONObject obj;
+		
+		String str = null;
+		
 		try {
-			obj = new JSONObject(params[0]);
+			str = HttpUtil.loadJsonFromNet(params[0], "get");
+			obj = new JSONObject(str);
 			
-			JSONArray array = obj.getJSONArray("templateData");
+			JSONArray array = obj.getJSONArray("data");
 			
-			DataInfo dataInfo = null;
 			for(int i = 0; i < array.length(); i++){
 				
 				JSONObject dataInfoObj = (JSONObject) array.get(i);
 				
-				dataInfo = new DataInfo();
+				JSONArray arrayData = dataInfoObj.getJSONArray("templateData");
 				
-				dataInfo.setName(dataInfoObj.optString("name"));
-				dataInfo.setJumpType(dataInfoObj.optString("jumpType"));
-				dataInfo.setSubjectId(dataInfoObj.optString("subjectId"));
-				dataInfo.setPicUrl(dataInfoObj.optString("picUrl"));
-				dataInfo.setPlayUrl(dataInfoObj.optString("playUrl"));
-				dataInfo.setIcon(dataInfoObj.optString("icon"));
-				dataInfo.setTag(dataInfoObj.optString("tag"));
-				dataInfo.setDesc(dataInfoObj.optString("desc"));
-				dataInfo.setVideoId(dataInfoObj.optString("videoId"));
-				dataInfo.setHotDegree(dataInfoObj.optString("hotDegree"));
-				dataInfo.setHotType(dataInfoObj.optString("hotType"));
-				dataInfo.setPlayTimeIconUrl(dataInfoObj.optString("playTimeIconUrl"));
-				dataInfo.setWebUrl(dataInfoObj.optString("webUrl"));
-				dataInfo.setSplitItem(dataInfoObj.optString("splitItem"));
-				dataInfo.setExt(dataInfoObj.optString("ext"));
-				dataInfo.setLibId(dataInfoObj.optString("libId"));
-				dataInfo.setChannelId(dataInfoObj.optString("channelId"));
-				dataInfo.setJumpChannel(dataInfoObj.optString("jumpChannel"));
-				
-				list.add(dataInfo);
+				DataInfo dataInfo = null;
+				for(int j = 0; j < arrayData.length(); j++){
+					
+					JSONObject dataInfoObjInner = (JSONObject) arrayData.get(j);
+					
+					dataInfo = new DataInfo();
+					
+					dataInfo.setName(dataInfoObjInner.optString("name"));
+					dataInfo.setJumpType(dataInfoObjInner.optString("jumpType"));
+					dataInfo.setSubjectId(dataInfoObjInner.optString("subjectId"));
+					dataInfo.setPicUrl(dataInfoObjInner.optString("picUrl"));
+					dataInfo.setPlayUrl(dataInfoObjInner.optString("playUrl"));
+					dataInfo.setIcon(dataInfoObjInner.optString("icon"));
+					dataInfo.setTag(dataInfoObjInner.optString("tag"));
+					dataInfo.setDesc(dataInfoObjInner.optString("desc"));
+					dataInfo.setVideoId(dataInfoObjInner.optString("videoId"));
+					dataInfo.setHotDegree(dataInfoObjInner.optString("hotDegree"));
+					dataInfo.setHotType(dataInfoObjInner.optString("hotType"));
+					dataInfo.setPlayTimeIconUrl(dataInfoObjInner.optString("playTimeIconUrl"));
+					dataInfo.setWebUrl(dataInfoObjInner.optString("webUrl"));
+					dataInfo.setSplitItem(dataInfoObjInner.optString("splitItem"));
+					dataInfo.setExt(dataInfoObjInner.optString("ext"));
+					dataInfo.setLibId(dataInfoObjInner.optString("libId"));
+					dataInfo.setChannelId(dataInfoObjInner.optString("channelId"));
+					dataInfo.setJumpChannel(dataInfoObjInner.optString("jumpChannel"));
+					
+					list.add(dataInfo);
+				}
 			}
 		} catch (JSONException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
@@ -83,7 +100,8 @@ public class JsonStringAsyncTask extends AsyncTask<String, Void, List<DataInfo>>
 
 	@Override
 	protected void onPostExecute(List<DataInfo> result) {
-		// TODO Auto-generated method stub
+		listener.getData(result);
+		mpdDialog.dismiss();
 		super.onPostExecute(result);
 	}
 }
