@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.waterfairy.gamecenter.activitys.SettingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_bar">
+
+        <ImageView
+            android:id="@+id/setting_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="15dp"
+            android:src="@mipmap/game_btn_title_back_normal" />
+
+        <TextView
+            android:id="@+id/setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/setting_search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:src="@mipmap/game_search_btn_normal" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/set_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bt_press"
+        android:text="on" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_bar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="消息推送"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/push"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selector_butn_toggle"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_bar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="检查更新"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selector_butn_toggle"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_bar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="清除缓存"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/bt_press"
+            android:gravity="center"
+            android:text="清除" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/setting_fankui"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_bar"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="意见反馈"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/setting_about"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/setting_fankui"
+            android:background="@drawable/bg_bar"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="关于"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

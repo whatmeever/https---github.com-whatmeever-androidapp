@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_bg"
+            android:paddingLeft="10dp"
+            android:hint="搜索礼包"
+            android:id="@+id/gift_et"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/game_search_btn_normal"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/gift_search"
+            />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.waterfairy.gamecenter.refresh.PullToRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gift_lvrefresh"
+            android:visibility="gone"
+            >
+            <include layout="@layout/pull_to_refresh" />
+            <com.waterfairy.gamecenter.refresh.PullableListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:id="@+id/gift_lv">
+            </com.waterfairy.gamecenter.refresh.PullableListView>
+            <include layout="@layout/load_more" />
+        </com.waterfairy.gamecenter.refresh.PullToRefreshLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/gift_text_off"
+            android:text="十分抱歉,没有找到您需要的礼包"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/gift_ll">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/game_all_gifts_pinned_header_hot_icon"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="热门游戏礼包"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+            <com.waterfairy.gamecenter.refresh.PullToRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/gift_refresh">
+                <include layout="@layout/pull_to_refresh" />
+                <com.waterfairy.gamecenter.refresh.PullableGridView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:numColumns="2"
+                    android:layout_gravity="center"
+                    android:id="@+id/gift_grid"/>
+                <include layout="@layout/load_more" />
+            </com.waterfairy.gamecenter.refresh.PullToRefreshLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

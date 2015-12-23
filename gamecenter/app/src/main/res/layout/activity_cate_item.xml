@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F4F4"
+    tools:context="com.waterfairy.gamecenter.category.CateItemActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_bar">
+        <ImageView
+            android:id="@+id/classic_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp"
+            android:src="@mipmap/game_btn_title_back_normal" />
+
+        <TextView
+            android:textColor="#3B3939"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/classic_title"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:id="@+id/classic_search"
+            android:src="@mipmap/game_search_btn_normal" />
+    </RelativeLayout>
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/cate_item_frame"/>-->
+    <com.waterfairy.gamecenter.refresh.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/pull_to_refresh" />
+        <!-- head-->
+        <com.waterfairy.gamecenter.refresh.PullableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:dividerHeight="3sp"
+            android:divider="#F4F4F4"
+             android:id="@+id/classic_lv"/>
+        <include layout="@layout/load_more" />
+    </com.waterfairy.gamecenter.refresh.PullToRefreshLayout>
+</LinearLayout>

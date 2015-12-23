@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/bg_newgame"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_topiclist"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY" />
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_above="@+id/title_topiclist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/date_activity"
+            android:textColor="#FFF"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/join_activity"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="15sp"
+            android:textColor="#FFF"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@id/image_topiclist"
+        android:textSize="16sp"
+        android:id="@+id/title_topiclist"
+        android:paddingTop="3dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/title_topiclist"
+        android:textSize="12sp"
+        android:id="@+id/content_topiclist"
+        android:paddingTop="3dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="3dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

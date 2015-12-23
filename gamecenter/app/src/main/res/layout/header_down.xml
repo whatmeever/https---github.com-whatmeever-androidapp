@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_newgame"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="1px"
+            android:background="#FFF"
+            android:paddingBottom="10dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="10dp"
+            android:text="下载中"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/re1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d9d9d9" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img1"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:id="@+id/progress1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title1"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/down1"
+                android:layout_toRightOf="@+id/img1"
+                android:background="#a9f4db">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#f79155" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/down1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d9d9d9" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img2"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:id="@+id/progress2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title2"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/down2"
+                android:layout_toRightOf="@+id/img2"
+                android:background="#a9f4db">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#f79155" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/down2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d9d9d9" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img3"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:id="@+id/progress3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title3"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/down3"
+                android:layout_toRightOf="@+id/img3"
+                android:background="#a9f4db">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#f79155" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/down3"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_newgame"
+            android:paddingBottom="10dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="10dp"
+            android:text="已下载"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

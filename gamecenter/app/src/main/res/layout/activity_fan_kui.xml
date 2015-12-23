@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f8f8f8"
+    tools:context="com.waterfairy.gamecenter.activitys.FanKuiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_bar">
+        <ImageView
+            android:id="@+id/fankui_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="15dp"
+            android:src="@mipmap/game_btn_title_back_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/setting_title"
+            android:text="反馈"
+            android:textSize="25sp" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:id="@+id/fankui_search"
+            android:src="@mipmap/game_search_btn_normal" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的建议"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/edit_bg">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fankui_et"
+            android:background="@null"
+            android:hint="请输入您的宝贵建议(可输入240)"
+            android:padding="5dp"
+            android:maxLength="240"/>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="14dp"
+        android:text="联系方式"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"
+        android:background="@drawable/edit_bg"
+        android:id="@+id/fankui_email"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_press"
+        android:id="@+id/fankui_ok"
+        android:text="提交"
+        android:layout_margin="15dp"/>
+</LinearLayout>

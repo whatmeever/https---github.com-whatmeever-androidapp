@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.waterfairy.gamecenter.AgreementActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/agree_bar"
+        android:background="@drawable/bg_bar">
+
+        <ImageView
+            android:id="@+id/xieyi_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:padding="15dp"
+            android:src="@mipmap/game_common_header_web_tile_left_btn" />
+
+        <TextView
+            android:id="@+id/title_newserver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/xieyi_refresh"
+            android:layout_toRightOf="@id/xieyi_back"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="协议"
+            android:textColor="#3B3939"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/xieyi_refresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:src="@mipmap/game_common_header_web_tile_right_btn" />
+
+    </RelativeLayout>
+    <WebView android:text="@string/hello_world"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/agree_bar"
+        android:layout_above="@+id/ok"
+        android:id="@+id/agree_web"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bt_press"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ok"
+        android:text="同意"/>
+
+</RelativeLayout>

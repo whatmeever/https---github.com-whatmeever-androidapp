@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mygift_ll">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mygift_img"
+            android:background="@mipmap/game_gift_image"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/mygift_img"
+            android:gravity="center"
+            android:id="@+id/mygift_text"
+            android:text="亲,先去抢个礼包吧?"/>
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/mygift_lv"/>
+
+</FrameLayout>

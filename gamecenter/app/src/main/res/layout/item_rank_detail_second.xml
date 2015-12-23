@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/tv1"
+        android:text="安装后才可以参与评论" />
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:id="@+id/rl"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/game_detail_comment_average_up_part_bg" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/iv"
+            android:background="@mipmap/game_detail_comment_average_down_part_bg" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+             />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_comment"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="10dp"
+                android:id="@+id/iv1"
+                android:src="@mipmap/game_detail_comment_star_full" />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:id="@+id/iv2"
+                android:layout_height="10dp"
+                android:src="@mipmap/game_detail_comment_star_full" />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:id="@+id/iv3"
+                android:layout_height="10dp"
+                android:src="@mipmap/game_detail_comment_star_full" />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:id="@+id/iv4"
+                android:layout_height="10dp"
+                android:src="@mipmap/game_detail_comment_star_full" />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:id="@+id/iv5"
+                android:layout_height="10dp"
+                android:src="@mipmap/game_detail_comment_star_full" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll"
+            android:id="@+id/tv_size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="平均评分" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/rl"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/ll2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="5星"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="4星"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="3星"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="2星"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="1星"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv1"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/ll2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/runk_detail"
+            />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/runk_detail"
+            />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/runk_detail"
+            />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/runk_detail"
+            />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/runk_detail"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv1"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/ll2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="9dp"
+            android:id="@+id/tv_score5"
+            android:background="#FCD652"
+            />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="8dp"
+            android:id="@+id/tv_score4"
+            android:layout_marginTop="11dp"
+            android:background="#FCD652"
+            />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="8dp"
+            android:id="@+id/tv_score3"
+            android:layout_marginTop="10dp"
+            android:background="#FCD652"
+            />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="10dp"
+            android:id="@+id/tv_score2"
+            android:layout_marginTop="10dp"
+            android:background="#FCD652"
+            />
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="10dp"
+            android:id="@+id/tv_score1"
+            android:layout_marginTop="8dp"
+            android:background="#FCD652"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9A9A9A"
+        android:id="@+id/line"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv"
+        android:layout_below="@+id/line"
+        />
+</RelativeLayout>
