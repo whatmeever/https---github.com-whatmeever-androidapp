@@ -65,6 +65,9 @@ public class WorkActivity extends FragmentActivity implements OnGetData{
 		String url = NewsConstants.URL_NEWS;
 		
 		try {
+//			new URL2StringAsyncTask(this).execute(url);
+//			
+//			Thread.sleep(3000);
 			
 			new JsonStringAsyncTask(this).execute(url);
 		} catch (Exception e) {
