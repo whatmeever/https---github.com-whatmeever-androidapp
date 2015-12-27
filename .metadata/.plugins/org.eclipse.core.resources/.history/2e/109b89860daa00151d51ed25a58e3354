@@ -1,0 +1,11 @@
+package com.james.gamecenter.fragment;
+
+public class FirstFragment extends ShouyeFragment {
+
+	@Override
+	public void init() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

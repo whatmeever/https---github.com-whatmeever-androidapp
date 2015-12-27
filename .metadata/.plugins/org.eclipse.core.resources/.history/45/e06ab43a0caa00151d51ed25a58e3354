@@ -1,0 +1,7 @@
+package com.james.gamecenter.fragment;
+
+import android.support.v4.app.Fragment;
+
+public abstract class ShouyeFragment extends Fragment {
+
+}

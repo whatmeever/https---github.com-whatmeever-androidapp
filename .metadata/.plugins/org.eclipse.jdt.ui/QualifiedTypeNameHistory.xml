@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="android.support.v4.app.FragmentActivity"/>
-<fullyQualifiedTypeName name="android.support.v4.app.FragmentPagerAdapter"/>
 <fullyQualifiedTypeName name="android.support.v4.app.FragmentManager"/>
 <fullyQualifiedTypeName name="android.app.ProgressDialog"/>
 <fullyQualifiedTypeName name="android.R.drawable"/>
@@ -12,14 +11,34 @@
 <fullyQualifiedTypeName name="com.james.tvplay.interf.OnGetURLString"/>
 <fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="com.james.tvplay.bean.DataInfo"/>
-<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
 <fullyQualifiedTypeName name="com.james.tvplay.adapter.DataInfoAdatper.ViewHolder"/>
 <fullyQualifiedTypeName name="android.view.LayoutInflater"/>
-<fullyQualifiedTypeName name="android.R"/>
-<fullyQualifiedTypeName name="android.R.layout"/>
 <fullyQualifiedTypeName name="com.james.tvplay.R"/>
 <fullyQualifiedTypeName name="com.james.tvplay.R.id"/>
 <fullyQualifiedTypeName name="com.james.tvplay.R.layout"/>
 <fullyQualifiedTypeName name="com.james.tvplay.adapter.DataInfoAdatper"/>
 <fullyQualifiedTypeName name="android.support.v4.app.ListFragment"/>
+<fullyQualifiedTypeName name="android.support.v4.view.ViewPager"/>
+<fullyQualifiedTypeName name="android.os.Handler"/>
+<fullyQualifiedTypeName name="android.os.Message"/>
+<fullyQualifiedTypeName name="com.james.gamecenter.activity.MainActivity"/>
+<fullyQualifiedTypeName name="android.widget.LinearLayout"/>
+<fullyQualifiedTypeName name="android.widget.LinearLayout.LayoutParams"/>
+<fullyQualifiedTypeName name="com.james.gamecenter.R.drawable"/>
+<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="com.james.gamecenter.R.layout"/>
+<fullyQualifiedTypeName name="com.james.gamecenter.R.id"/>
+<fullyQualifiedTypeName name="android.widget.ImageView"/>
+<fullyQualifiedTypeName name="android.widget.ImageView.ScaleType"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.mipmap"/>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences"/>
+<fullyQualifiedTypeName name="com.james.gamecenter.FirstActivity"/>
+<fullyQualifiedTypeName name="com.james.gamecenter.fragment.FirstFragment"/>
+<fullyQualifiedTypeName name="com.james.gamecenter.R"/>
+<fullyQualifiedTypeName name="android.support.v4.app.FragmentPagerAdapter"/>
+<fullyQualifiedTypeName name="android.support.v4.view.ViewPager.OnPageChangeListener"/>
 </qualifiedTypeNameHistroy>
