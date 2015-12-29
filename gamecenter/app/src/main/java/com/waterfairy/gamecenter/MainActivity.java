@@ -75,11 +75,11 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SharedPreferences shareSet = getSharedPreferences("setting", MODE_PRIVATE);
-        if (shareSet.getBoolean("update", true)) {
-            //更新
-            UmengUpdateAgent.setUpdateOnlyWifi(false);
-            UmengUpdateAgent.update(this);
-        }
+//        if (shareSet.getBoolean("update", true)) {
+//            //更新
+//            UmengUpdateAgent.setUpdateOnlyWifi(false);
+//            UmengUpdateAgent.update(this);
+//        }
         if (shareSet.getBoolean("push", true)) {
             //开启推送
             PushAgent mPushAgent = PushAgent.getInstance(this);
