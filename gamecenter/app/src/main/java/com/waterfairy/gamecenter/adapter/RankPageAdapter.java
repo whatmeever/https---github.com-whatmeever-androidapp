@@ -7,7 +7,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/10/16.
+ *
+ * @author james
  */
 public class RankPageAdapter extends FragmentPagerAdapter {
     List<Fragment>list;

@@ -19,6 +19,10 @@ import com.waterfairy.gamecenter.AgreementActivity;
 import com.waterfairy.gamecenter.R;
 import com.waterfairy.gamecenter.utils.RegexUtils;
 
+/**
+ *
+ * @author james
+ */
 public class RegistActivity extends AppCompatActivity implements View.OnClickListener {
     private ImageView back;
     private EditText name,pwd;

@@ -21,7 +21,8 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Created by Administrator on 2015/10/29.
+ *
+ * @author james
  */
 public abstract class stateChange {
     int download = 0;

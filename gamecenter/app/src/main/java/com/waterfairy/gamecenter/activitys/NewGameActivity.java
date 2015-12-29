@@ -7,6 +7,10 @@ import android.view.MenuItem;
 
 import com.waterfairy.gamecenter.R;
 
+/**
+ *
+ * @author james
+ */
 public class NewGameActivity extends AppCompatActivity {
 
     @Override

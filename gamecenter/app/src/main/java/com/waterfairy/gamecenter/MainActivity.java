@@ -46,6 +46,11 @@ import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
 
+
+/**
+ *
+ * @author james
+ */
 public class MainActivity extends AppCompatActivity implements TextWatcher, View.OnClickListener {
     private SlidingMenu mMenu;
     private Fragment lastFragMennt;

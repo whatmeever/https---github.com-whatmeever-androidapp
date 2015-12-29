@@ -29,6 +29,10 @@ import com.waterfairy.gamecenter.utils.NetUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * @author james
+ */
 public class NewServerDetailActivty extends AppCompatActivity implements View.OnClickListener {
 
     private ImageView backNewserverdetail;

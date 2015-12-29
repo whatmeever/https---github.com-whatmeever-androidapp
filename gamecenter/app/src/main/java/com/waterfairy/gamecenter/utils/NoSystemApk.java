@@ -13,14 +13,8 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * 返回非系统的apk信息
- * @name NoSystemApk 
- * @author hh
- * @Description TODO
- * @date 2015-5-8
- * @modify
- * @modifyDate 2015-5-8
- * @modifyContent
+ *
+ * @author james
  */
 public class NoSystemApk {
 	public static List<PackageInfo> getPackageInfo(Context context) {

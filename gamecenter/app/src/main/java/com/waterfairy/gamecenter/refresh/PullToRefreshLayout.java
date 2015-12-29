@@ -21,7 +21,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * Created by zhaohang on 2015/10/22.
+ *
+ * @author james
  */
 public class PullToRefreshLayout extends RelativeLayout {
     public static final String TAG = "PullToRefreshLayout";

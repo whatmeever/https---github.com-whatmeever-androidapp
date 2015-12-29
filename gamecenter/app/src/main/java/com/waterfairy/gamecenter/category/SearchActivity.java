@@ -34,6 +34,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ *
+ * @author james
+ */
 public class SearchActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
     private ImageView back,search;
     private MyGridview gridView1;

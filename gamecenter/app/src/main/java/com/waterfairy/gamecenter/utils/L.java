@@ -3,10 +3,9 @@ package com.waterfairy.gamecenter.utils;
 import android.util.Log;
 
 /**
+ *
  * Log统一管理类
- * 
- * @author way
- * 
+ * @author james
  */
 public class L
 {

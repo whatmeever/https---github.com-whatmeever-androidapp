@@ -13,7 +13,10 @@ import com.nineoldandroids.view.ViewHelper;
 import com.waterfairy.gamecenter.R;
 import com.waterfairy.gamecenter.utils.ScreenUtils;
 
-
+/**
+ *
+ * @author james
+ */
 public class SlidingMenu extends HorizontalScrollView
 {
 	/**

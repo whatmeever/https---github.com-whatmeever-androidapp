@@ -5,7 +5,8 @@ import android.widget.ImageView;
 import com.waterfairy.gamecenter.R;
 
 /**
- * Created by zhaohang on 2015/10/30.
+ *
+ * @author james
  */
 public class FirstImgFragment extends ShouYeBaseFragment {
     @Override

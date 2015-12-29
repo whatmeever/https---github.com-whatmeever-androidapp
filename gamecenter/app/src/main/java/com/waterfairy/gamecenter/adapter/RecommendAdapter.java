@@ -50,7 +50,8 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Created by shui on 2015/10/19.
+ *
+ * @author james
  */
 public class RecommendAdapter extends BaseAdapter implements View.OnClickListener {
     private static List<String> listCon;

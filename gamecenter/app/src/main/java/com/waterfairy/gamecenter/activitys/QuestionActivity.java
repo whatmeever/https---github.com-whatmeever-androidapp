@@ -29,6 +29,10 @@ import com.waterfairy.gamecenter.adapter.QuestionAdapter;
 
 import java.util.HashMap;
 
+/**
+ *
+ * @author james
+ */
 public class QuestionActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher {
     private ImageView iv_back;
     private TextView tv_send;

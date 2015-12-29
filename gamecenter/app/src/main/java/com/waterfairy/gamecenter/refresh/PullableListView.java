@@ -5,6 +5,10 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.ListView;
 
+/**
+ *
+ * @author james
+ */
 public class PullableListView extends ListView implements Pullable
 {
 

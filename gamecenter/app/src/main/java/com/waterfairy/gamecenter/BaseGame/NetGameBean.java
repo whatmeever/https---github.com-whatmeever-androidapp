@@ -3,7 +3,8 @@ package com.waterfairy.gamecenter.BaseGame;
 import java.util.List;
 
 /**
- * Created by shui on 2015/10/26.
+ *
+ * @author james
  */
 public class NetGameBean {
 

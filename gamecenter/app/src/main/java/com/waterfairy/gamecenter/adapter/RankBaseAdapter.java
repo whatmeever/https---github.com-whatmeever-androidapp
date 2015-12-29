@@ -39,10 +39,12 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/10/16.
- * //记录是否点击下载-->点击下载后设置为true-->不管是等待还是下载;
- //判断如果下载量小于3那么直接下载-->加isClick判断true下载/点击false表示暂停
- //如果下载大于3那么直接等待-->当有下载完成后，直接执行下一个等待的下载;
+ *
+ * @author james.
+ *
+ * 记录是否点击下载-->点击下载后设置为true-->不管是等待还是下载;
+ * 判断如果下载量小于3那么直接下载-->加isClick判断true下载/点击false表示暂停
+ * 如果下载大于3那么直接等待-->当有下载完成后，直接执行下一个等待的下载;
  */
 public class RankBaseAdapter extends BaseAdapter {
     private List<ClassicBean.MsgEntity> list;

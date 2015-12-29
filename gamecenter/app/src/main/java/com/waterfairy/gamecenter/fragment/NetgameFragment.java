@@ -44,7 +44,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by shui on 2015/10/16.
+ *
+ * @author james
  */
 public class NetgameFragment extends Fragment implements View.OnClickListener, ViewPager.OnPageChangeListener, AdapterView.OnItemClickListener, AbsListView.OnScrollListener {
     //view

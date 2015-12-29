@@ -1,5 +1,10 @@
 package com.waterfairy.gamecenter.refresh;
 
+
+/**
+ *
+ * @author james
+ */
 public interface Pullable
 {
 	/**

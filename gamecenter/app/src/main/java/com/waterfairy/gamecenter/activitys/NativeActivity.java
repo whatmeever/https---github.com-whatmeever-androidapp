@@ -17,6 +17,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ *
+ * @author james
+ */
 public class NativeActivity extends AppCompatActivity implements View.OnClickListener {
     private ListView lv;
     private List<Map<String, Object>> data;

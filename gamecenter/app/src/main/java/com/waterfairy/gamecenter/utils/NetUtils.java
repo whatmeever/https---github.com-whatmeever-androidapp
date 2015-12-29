@@ -3,7 +3,8 @@ package com.waterfairy.gamecenter.utils;
 import java.util.Calendar;
 
 /**
- * Created by shui on 2015/10/16.
+ *
+ * @author james
  */
 public class NetUtils {
     //参数说明 page_index 页码

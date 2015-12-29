@@ -4,7 +4,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by zhaohang on 2015/10/26.
+ *
+ * @author james
  */
 public class RegexUtils {
     public boolean isMobileNO(String mobiles) {

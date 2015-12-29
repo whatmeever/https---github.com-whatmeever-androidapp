@@ -21,7 +21,8 @@ import com.waterfairy.gamecenter.utils.NoSystemApk;
 import java.util.List;
 
 /**
- * Created by shui on 2015/10/30.
+ *
+ * @author james
  */
 public class DownAdapter extends BaseAdapter {
     private static Context context;

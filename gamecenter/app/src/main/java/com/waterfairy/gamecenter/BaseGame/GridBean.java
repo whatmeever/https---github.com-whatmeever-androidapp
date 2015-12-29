@@ -3,7 +3,8 @@ package com.waterfairy.gamecenter.BaseGame;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/10/16.
+ *
+ * @author james
  */
 public class GridBean {
 

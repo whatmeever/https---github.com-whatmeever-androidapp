@@ -16,7 +16,8 @@ import com.waterfairy.gamecenter.R;
 import java.util.List;
 
 /**
- * Created by shui on 2015/10/27.
+ *
+ * @author james
  */
 public class NewServerAdapter extends BaseAdapter {
     private Context context;

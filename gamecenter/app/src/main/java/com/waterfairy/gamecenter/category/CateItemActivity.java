@@ -31,6 +31,10 @@ import com.waterfairy.gamecenter.utils.NetUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * @author james
+ */
 public class CateItemActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
     public ImageView back, search;
     public TextView title;

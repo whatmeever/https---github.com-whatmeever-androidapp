@@ -38,7 +38,8 @@ import java.util.List;
 import java.util.logging.Handler;
 
 /**
- * Created by Administrator on 2015/10/16.
+ *
+ * @author james
  */
 public abstract class Rank_BaseFragment extends Fragment implements AbsListView.OnScrollListener, AdapterView.OnItemClickListener {
     private ListView listView;

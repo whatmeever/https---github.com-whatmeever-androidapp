@@ -10,6 +10,10 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ImageView;
 
+/**
+ *
+ * @author james
+ */
 public class AgreementActivity extends AppCompatActivity implements View.OnClickListener {
     private Button button;
     private WebView webView;

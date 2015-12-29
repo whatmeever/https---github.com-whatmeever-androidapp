@@ -27,6 +27,10 @@ import com.waterfairy.gamecenter.utils.NetUtils;
 
 import java.util.List;
 
+/**
+ *
+ * @author james
+ */
 public class HotSearchActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
     private EditText title;
     private ImageView back,search;

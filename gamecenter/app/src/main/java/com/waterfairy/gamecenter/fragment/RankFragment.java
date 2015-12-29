@@ -19,7 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/10/16.
+ *
+ * @author james
  */
 public class RankFragment extends Fragment implements ViewPager.OnPageChangeListener, View.OnClickListener {
    private ViewPager viewPager;

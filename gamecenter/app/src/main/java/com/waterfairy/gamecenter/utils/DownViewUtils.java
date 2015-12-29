@@ -18,8 +18,10 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.List;
 
+
 /**
- * Created by shui on 2015/10/31.
+ *
+ * @author james
  */
 public class DownViewUtils {
     public static void setButton(Context context, List<String> listPkgs, HashMap<String, Integer> hashMap, TextView downloadRecommend, Button button, String pkg, long size) {

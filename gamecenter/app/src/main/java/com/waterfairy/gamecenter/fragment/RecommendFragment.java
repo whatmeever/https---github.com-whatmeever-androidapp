@@ -49,7 +49,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by shui on 2015/10/16.
+ *
+ * @author james
  */
 public class RecommendFragment extends Fragment implements ViewPager.OnPageChangeListener, AbsListView.OnScrollListener, View.OnTouchListener, AdapterView.OnItemClickListener, View.OnClickListener {
     private static final String TAG = "test";

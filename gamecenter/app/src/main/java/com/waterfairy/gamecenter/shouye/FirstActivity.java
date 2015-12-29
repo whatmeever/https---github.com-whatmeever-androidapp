@@ -19,6 +19,10 @@ import com.waterfairy.gamecenter.adapter.RankPageAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * @author james
+ */
 public class FirstActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
     private ViewPager vp;
     private ImageView img;

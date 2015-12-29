@@ -30,7 +30,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/10/19.
+ *
+ * @author james
  */
 public class Rank_Detail_FirstFragment extends Fragment implements View.OnClickListener {
     private ImageView iv_down;

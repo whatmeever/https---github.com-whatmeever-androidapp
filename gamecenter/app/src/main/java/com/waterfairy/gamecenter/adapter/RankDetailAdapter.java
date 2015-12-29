@@ -15,7 +15,8 @@ import com.waterfairy.gamecenter.utils.Tools;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/10/21.
+ *
+ * @author james
  */
 public class RankDetailAdapter extends BaseAdapter {
     private List<DetaliBean.CommentEntity> list;

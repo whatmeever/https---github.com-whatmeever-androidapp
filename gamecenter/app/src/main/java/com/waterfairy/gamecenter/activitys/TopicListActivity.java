@@ -31,6 +31,10 @@ import com.waterfairy.gamecenter.utils.NetUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * @author james
+ */
 public class TopicListActivity extends AppCompatActivity implements View.OnClickListener, AbsListView.OnScrollListener, AdapterView.OnItemClickListener {
     private static final String TAG = "test";
     private ImageView backBase1;

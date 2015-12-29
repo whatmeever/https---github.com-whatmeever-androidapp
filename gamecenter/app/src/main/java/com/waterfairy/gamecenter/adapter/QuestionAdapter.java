@@ -25,7 +25,8 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/10/23.
+ *
+ * @author james
  */
 public class QuestionAdapter extends BaseAdapter {
     String[] strings;

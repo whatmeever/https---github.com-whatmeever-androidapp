@@ -8,7 +8,8 @@ import android.widget.ImageView;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/10/27.
+ *
+ * @author james
  */
 public class Rank_MaxAdapter extends PagerAdapter {
     List<ImageView>list;

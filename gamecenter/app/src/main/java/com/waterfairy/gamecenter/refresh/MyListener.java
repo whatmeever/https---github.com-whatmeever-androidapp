@@ -5,7 +5,10 @@ import android.os.Message;
 
 import static com.waterfairy.gamecenter.refresh.PullToRefreshLayout.*;
 
-
+/**
+ *
+ * @author james
+ */
 public abstract class MyListener implements PullToRefreshLayout.OnRefreshListener
 {
 

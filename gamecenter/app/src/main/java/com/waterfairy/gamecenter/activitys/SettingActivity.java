@@ -21,6 +21,10 @@ import com.waterfairy.gamecenter.category.SearchActivity;
 import java.io.File;
 import java.lang.reflect.Field;
 
+/**
+ *
+ * @author james
+ */
 public class SettingActivity extends AppCompatActivity implements View.OnClickListener {
     private Button bt;
     private ImageView back, search;

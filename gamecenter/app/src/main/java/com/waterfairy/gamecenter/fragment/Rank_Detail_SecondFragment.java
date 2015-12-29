@@ -37,7 +37,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/10/19.
+ *
+ * @author james
  */
 public class Rank_Detail_SecondFragment extends Fragment implements AbsListView.OnScrollListener {
     private ListView listView;

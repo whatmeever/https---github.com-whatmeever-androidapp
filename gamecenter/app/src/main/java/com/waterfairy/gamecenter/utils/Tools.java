@@ -22,7 +22,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Administrator on 2015/10/20.
+ *
+ * @author james
  */
 public class Tools {
     public static void GameDate(double commend, ImageView iv1, ImageView iv2, ImageView iv3, ImageView iv4, ImageView iv5) {

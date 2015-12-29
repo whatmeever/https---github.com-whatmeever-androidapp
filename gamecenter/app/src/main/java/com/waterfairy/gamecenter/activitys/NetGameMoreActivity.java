@@ -33,6 +33,10 @@ import com.waterfairy.gamecenter.utils.NetUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * @author james
+ */
 public class NetGameMoreActivity extends AppCompatActivity implements AdapterView.OnItemClickListener, AbsListView.OnScrollListener, View.OnClickListener {
     private ListView listView;
     private View listviewFoot;

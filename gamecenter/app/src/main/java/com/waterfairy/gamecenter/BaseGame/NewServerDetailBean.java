@@ -1,7 +1,8 @@
 package com.waterfairy.gamecenter.BaseGame;
 
 /**
- * Created by shui on 2015/10/27.
+ *
+ * @author james
  */
 public class NewServerDetailBean {
 

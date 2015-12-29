@@ -29,6 +29,10 @@ import com.waterfairy.gamecenter.utils.NetUtils;
 
 import java.util.List;
 
+/**
+ *
+ * @author james
+ */
 public class CateTopicActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
     private ImageView back,search,imageView;
     private TextView title,text;

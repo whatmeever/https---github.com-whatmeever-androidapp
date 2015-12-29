@@ -29,6 +29,10 @@ import com.waterfairy.gamecenter.utils.NetUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ * @author james
+ */
 public class NewServerActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener, AbsListView.OnScrollListener {
     private HttpUtils utils;
     private Gson gson;

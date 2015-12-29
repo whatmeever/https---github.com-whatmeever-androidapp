@@ -18,7 +18,8 @@ import com.umeng.message.entity.UMessage;
 import com.waterfairy.gamecenter.activitys.Detail_RunkActivity;
 
 /**
- * Created by shui on 2015/10/28.
+ *
+ * @author james
  */
 public class MyApplication extends Application {
     private static final String TAG = MyApplication.class.getName();

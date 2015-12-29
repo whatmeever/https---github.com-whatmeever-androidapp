@@ -35,9 +35,9 @@ import com.waterfairy.gamecenter.utils.Tools;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
- * Created by Administrator on 2015/10/19.
+ *
+ * @author james
  */
 public class Rank_Base_DetailFragment extends Fragment implements ViewPager.OnPageChangeListener, View.OnClickListener {
     private ViewPager viewPager;

@@ -9,7 +9,8 @@ import com.waterfairy.gamecenter.MainActivity;
 import com.waterfairy.gamecenter.R;
 
 /**
- * Created by zhaohang on 2015/10/30.
+ *
+ * @author james
  */
 public class ThirdImgFragment extends ShouYeBaseFragment {
     @Override

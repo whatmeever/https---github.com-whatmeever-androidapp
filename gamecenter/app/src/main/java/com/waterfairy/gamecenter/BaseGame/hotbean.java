@@ -3,7 +3,8 @@ package com.waterfairy.gamecenter.BaseGame;
 import java.util.List;
 
 /**
- * Created by zhaohang on 2015/10/21.
+ *
+ * @author james
  */
 public class hotbean {
 
