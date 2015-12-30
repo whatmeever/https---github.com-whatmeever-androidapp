@@ -11,16 +11,17 @@ import org.apache.http.util.EntityUtils;
 
 /**
  * 解析URL的工具类
+ * 
  * @author james
  *
  */
+@SuppressWarnings("deprecation")
 public class HttpUtil {
 
 	// 下载JSON的工具方法
-	public static String loadJsonFromNet(String url, String method)
-			throws Exception {
+	public static String loadJsonFromNet(String url, String method) throws Exception {
 		String str = null;
-		
+
 		// 创建一个HttpClient对象
 		HttpClient client = new DefaultHttpClient();
 		HttpUriRequest request = null;
@@ -47,8 +48,7 @@ public class HttpUtil {
 	}
 
 	// 下载图片的工具方法
-	public static byte[] loadImgFromNet(String url, String method)
-			throws Exception {
+	public static byte[] loadImgFromNet(String url, String method) throws Exception {
 		// 创建一个HttpClient对象
 		HttpClient client = new DefaultHttpClient();
 		HttpUriRequest request = null;

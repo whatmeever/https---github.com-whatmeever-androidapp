@@ -20,7 +20,7 @@ import android.view.ViewGroup;
  */
 public class MyFragment extends ListFragment {
 	
-	private List<DataInfo> list = null;
+//	private List<DataInfo> list = null;
 	private DataInfoAdatper adapter = null;
 	
 	@Override
@@ -34,7 +34,7 @@ public class MyFragment extends ListFragment {
 	}
 
 	public MyFragment(List<DataInfo> list, DataInfoAdatper adapter) {
-		this.list = list;
+//		this.list = list;
 		this.adapter = adapter;
 	}
 

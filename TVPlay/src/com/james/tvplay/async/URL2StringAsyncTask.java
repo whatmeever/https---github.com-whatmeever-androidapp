@@ -8,11 +8,11 @@ import android.os.AsyncTask;
 
 public class URL2StringAsyncTask extends AsyncTask<String, Void, String> {
 	
-	private Context context = null;
+//	private Context context = null;
 	OnGetURLString listener = null;
 	
 	public URL2StringAsyncTask(Context context) {
-		this.context = context;
+//		this.context = context;
 		listener = (OnGetURLString) context;
 	}
 

@@ -7,12 +7,9 @@ import com.james.tvplay.R;
 import com.james.tvplay.adapter.DataInfoAdatper;
 import com.james.tvplay.adapter.FragementAdapter;
 import com.james.tvplay.async.JsonStringAsyncTask;
-import com.james.tvplay.async.URL2StringAsyncTask;
 import com.james.tvplay.bean.DataInfo;
 import com.james.tvplay.fragment.MyFragment;
 import com.james.tvplay.interf.OnGetData;
-import com.james.tvplay.interf.OnGetURLString;
-import com.james.tvplay.utils.HttpUtil;
 import com.james.tvplay.utils.NewsConstants;
 
 import android.graphics.Color;
@@ -23,7 +20,6 @@ import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 /**
  * 
@@ -38,8 +34,8 @@ public class WorkActivity extends FragmentActivity implements OnGetData{
 //	private String[] titles;
 	private List<Fragment> fragmentList;
 	
-	private List<DataInfo> list = null;
-	private String urlJsonStr = null;
+//	private List<DataInfo> list = null;
+//	private String urlJsonStr = null;
 	
 	DataInfoAdatper adapter = null;
 
@@ -68,7 +64,6 @@ public class WorkActivity extends FragmentActivity implements OnGetData{
 			
 			new JsonStringAsyncTask(this).execute(url);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -99,7 +94,7 @@ public class WorkActivity extends FragmentActivity implements OnGetData{
 
 	@Override
 	public void getData(List<DataInfo> list) {
-		this.list = list;
+//		this.list = list;
 		
 		adapter = new DataInfoAdatper(this, list);
 		
