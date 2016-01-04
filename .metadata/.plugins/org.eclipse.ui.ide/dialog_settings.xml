@@ -12,6 +12,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/james/resource/0001/Day29-LruCache+软引用"/>
 			<item value="/Users/james/resource/0001"/>
 			<item value="/Users/james/resource/0001/Day07_AsyncTask"/>
 		</list>
