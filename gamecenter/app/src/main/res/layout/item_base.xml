@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <RelativeLayout
+        android:id="@+id/content__item_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_newgame">
+
+        <RelativeLayout
+            android:id="@+id/top_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/icon_topic"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_toLeftOf="@+id/download_topic"
+                android:layout_toRightOf="@+id/icon_topic"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/start_topic_lin"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#222"
+                    android:textSize="18sp"  />
+
+                <LinearLayout
+                    android:id="@+id/start_topic_lin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp">
+
+                    <ImageView
+                        android:id="@+id/start_topic_1"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@mipmap/game_detail_comment_star_full" />
+
+                    <ImageView
+                        android:id="@+id/start_topic_2"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@mipmap/game_detail_comment_star_full" />
+
+                    <ImageView
+                        android:id="@+id/start_topic_3"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@mipmap/game_detail_comment_star_full" />
+
+                    <ImageView
+                        android:id="@+id/start_topic_4"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@mipmap/game_detail_comment_star_full" />
+
+                    <ImageView
+
+                        android:id="@+id/start_topic_5"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@mipmap/game_detail_comment_star_full" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/user_count_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/start_topic_lin"
+                    android:textColor="#FF9C00" />
+
+                <TextView
+                    android:id="@+id/apksize_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/start_topic_lin"
+                    android:layout_toRightOf="@id/user_count_topic"
+                    android:text="/123M" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/download_topic"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="#FF9C00"
+                android:gravity="center"
+                android:text="下载"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/line_topic"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/top_topic"
+            android:background="#d9d9d9" />
+
+        <!--<ScrollView-->
+        <!--android:layout_below="@+id/line_topic"-->
+        <!--android:id="@+id/vp_base"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp">-->
+
+        <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:id="@+id/scroll_base"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp">-->
+
+        <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/vp_base"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/line_topic" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_topic"
+            android:paddingBottom="3dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp">
+
+            <TextView
+                android:id="@+id/slogan_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/user_count_new"
+                android:singleLine="true" />
+
+            <RelativeLayout
+                android:id="@+id/lin_xb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/user_count_new">
+
+                <ImageView
+                    android:id="@+id/img_xb"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/slogan_topic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_xb"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/slogan_topic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/slogan_topic1"
+                    android:layout_toRightOf="@id/img_xb"
+                    android:singleLine="true" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/user_count_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/text_view"
+                android:textColor="#dd472d" />
+
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

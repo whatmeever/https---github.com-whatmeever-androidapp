@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    tools:context="com.waterfairy.gamecenter.activitys.NewServerDetailActivty">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_bar">
+
+        <ImageView
+            android:id="@+id/back_newserverdetail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:padding="15dp"
+            android:src="@mipmap/game_btn_title_back_normal" />
+
+        <TextView
+            android:id="@+id/title_newserverdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/search_newserverdetail"
+            android:layout_toRightOf="@id/back_newserverdetail"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#3B3939"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/search_newserverdetail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:src="@mipmap/game_search_btn_normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#FFF"
+        android:id="@+id/line"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_newserver_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:id="@+id/desc_newserver_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview_newserver_detail"
+        android:background="@drawable/bg_web"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/top_topic"
+        android:layout_below="@+id/line"
+         />
+
+    <RelativeLayout
+        android:id="@+id/top_topic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_cycle_downdetail"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/icon_topic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/download_topic"
+            android:layout_toRightOf="@+id/icon_topic"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/start_topic_lin"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="#222"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/start_topic_lin"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/start_topic_1"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@mipmap/game_detail_comment_star_full" />
+
+                <ImageView
+                    android:id="@+id/start_topic_2"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@mipmap/game_detail_comment_star_full" />
+
+                <ImageView
+                    android:id="@+id/start_topic_3"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@mipmap/game_detail_comment_star_full" />
+
+                <ImageView
+                    android:id="@+id/start_topic_4"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@mipmap/game_detail_comment_star_full" />
+
+                <ImageView
+
+                    android:id="@+id/start_topic_5"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@mipmap/game_detail_comment_star_full" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_count_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/start_topic_lin"
+                android:textColor="#FF9C00" />
+
+            <TextView
+                android:id="@+id/apksize_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/start_topic_lin"
+                android:layout_toRightOf="@id/user_count_topic"
+                 />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/download_topic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_cycle_down"
+            android:gravity="center"
+            android:text="下载"
+            android:textColor="#ff4534"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <ImageView
+        android:id="@+id/image_move"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:scaleType="fitXY" />
+
+
+    <RelativeLayout
+        android:id="@+id/lin_move"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/image_move"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/icon_move">
+
+        <TextView
+            android:textColor="#222"
+            android:id="@+id/title_move_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:text="中间" />
+
+
+        <LinearLayout
+            android:id="@+id/lin_start"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_move"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:paddingTop="2dp"
+
+                android:text="火影"
+                android:textColor="#222" />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:src="@mipmap/game_detail_comment_star_full"
+                    android:id="@+id/start_move_1"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+
+                <ImageView
+                    android:src="@mipmap/game_detail_comment_star_full"
+                    android:id="@+id/start_move_2"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+
+                <ImageView
+                    android:src="@mipmap/game_detail_comment_star_full"
+                    android:id="@+id/start_move_3"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+
+                <ImageView
+                    android:src="@mipmap/game_detail_comment_star_full"
+                    android:id="@+id/start_move_4"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+
+                <ImageView
+
+                    android:src="@mipmap/game_detail_comment_star_full"
+                    android:id="@+id/start_move_5"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:src="@mipmap/game_detail_comment_star_full"
+                    android:id="@+id/start_move"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_move"
+                    android:text="/123MB" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/download_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_move_down"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:text="查看" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/icon_move"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/lin_move"
+        android:layout_marginLeft="15dp" />
+
+</RelativeLayout>

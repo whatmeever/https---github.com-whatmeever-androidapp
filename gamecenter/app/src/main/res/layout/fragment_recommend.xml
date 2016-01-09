@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--滚动-->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+        <!--首发 专题 礼包 免费-->
+        <LinearLayout
+            android:id="@+id/category_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FFF"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+            <ImageView
+
+                android:id="@+id/img_cate1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+
+                android:id="@+id/img_cate2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_cate3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_cate4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="6dp"
+            android:background="#dcdcdc" />
+        <!-- 新品速递-->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_newgame">
+
+            <TextView
+                android:id="@+id/xinpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:padding="3dp"
+                android:text="新品速递" />
+
+            <TextView
+                android:id="@+id/more_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:padding="3dp"
+                android:text="显示全部↘" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/xinpin"
+                android:overScrollMode="never"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/lin_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+        <!--应用推荐-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="120dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:id="@+id/cycle1_move"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/bg_cycle_big" />
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:id="@+id/cycle2_move"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/bg_cycle_little" />
+
+        <TextView
+            android:layout_marginRight="5dp"
+            android:id="@+id/cycle3_move"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/bg_cycle_little" />
+
+        <TextView
+            android:id="@+id/cycle4_move"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/bg_cycle_little" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

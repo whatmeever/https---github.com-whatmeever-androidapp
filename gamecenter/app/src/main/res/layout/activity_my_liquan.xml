@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.waterfairy.gamecenter.activitys.MyLiquanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_bar">
+
+        <ImageView
+            android:id="@+id/liquan_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:padding="15dp"
+            android:src="@mipmap/game_common_header_web_tile_left_btn" />
+
+        <TextView
+            android:id="@+id/title_newserver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/liquan_refresh"
+            android:layout_toRightOf="@id/liquan_back"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="我的礼券"
+            android:textColor="#3B3939"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/liquan_refresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:src="@mipmap/game_common_header_web_tile_right_btn" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/liquan_progress"
+        android:layout_width="match_parent"
+        android:layout_height="3dp">
+        <TextView
+            android:background="#92bcff"
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview_liquan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

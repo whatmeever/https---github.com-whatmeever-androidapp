@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.waterfairy.gamecenter.category.SearchActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_bar">
+        <ImageView
+            android:id="@+id/mysearch_back"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="toggleMenu"
+            android:src="@mipmap/game_btn_title_back_normal" />
+        <RelativeLayout
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/mysearch_back"
+            android:background="@drawable/bg_search">
+
+            <EditText
+                android:layout_toLeftOf="@+id/mysearch_image"
+                android:layout_centerVertical="true"
+                android:id="@+id/mysearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:hint="三国" />
+            <ImageView
+                android:id="@+id/mysearch_image"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/game_search_btn_normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mysearch_frame">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:id="@+id/mysearch_anim"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/mysearch_ll">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="热门游戏搜索"
+                android:padding="10dp"
+                />
+            <com.waterfairy.gamecenter.view.MyGridview
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:id="@+id/mysearch_grid1"
+                android:numColumns="4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="热门关键字"
+                />
+            <com.waterfairy.gamecenter.view.MyGridview
+                android:layout_width="240dp"
+                android:layout_height="180dp"
+                android:id="@+id/mysearch_grid2"
+                android:numColumns="3"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp"
+                android:layout_gravity="center"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mysearch_huan"
+                android:text="换一批"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bt_press"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
